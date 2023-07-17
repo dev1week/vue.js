@@ -4,9 +4,11 @@ const app = Vue.createApp({
       courseGoalA: "Finish the course and learn Vue!",
       courseGoalB: "<h1>1234</h1>",
       vueLink: "https://vuejs.org",
+      name,
     };
   },
   methods: {
+    setName() {},
     outputGoal() {
       const randomNumber = Math.random();
       if (randomNumber > 0.5) {

@@ -15,6 +15,10 @@ const app = Vue.createApp({
     remove(num) {
       this.counter = this.counter - num;
     },
+    submitForm(event) {
+      event.preventDefault();
+      alert("제출되었습니다.");
+    },
   },
 });
 
